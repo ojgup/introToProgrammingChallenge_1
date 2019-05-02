@@ -25,13 +25,13 @@ namespace psr
 			userChoice = userChoice.ToLower();
 			computerChoice = computerChoice.ToLower();
 			if(userChoice == "paper" && computerChoice == "rock" || userChoice == "rock" && computerChoice == "scissors" || userChoice == "scissors" && computerChoice == "paper") {
-				Console.WriteLine("Player wins round " + currentRound);
+				Console.WriteLine("Player wins match " + currentRound);
 				PlayerScore++;
 			} else if (userChoice == computerChoice){
-				Console.WriteLine("Round " + currentRound + " was a draw.");
+				Console.WriteLine("Match " + currentRound + " was a draw.");
 			
 			} else {
-				Console.WriteLine("Computer wins round " + currentRound);
+				Console.WriteLine("Computer wins match " + currentRound);
 				computerScore++;
 			}
 		}
@@ -46,17 +46,26 @@ namespace psr
 			string userChoice; 
 			int computerScore = 0;
 			int PlayerScore = 0;
-			int i = 0;
+			int match = 0, round = 0;
 			
-			while(i < 3){
+			while(round < 3) {
+				match = 0;
+				while(match < 3){
 		
-			Console.WriteLine("Enter in Paper, Scissors or Rock");
-			
-			userChoice = Console.ReadLine();
-			Console.WriteLine("User picked " + userChoice);
-			printWinner(userChoice,computer(num), i+1, ref computerScore, ref PlayerScore);
-			i++;
+					Console.WriteLine("Enter in Paper, Scissors or Rock");
+				
+					userChoice = Console.ReadLine();
+					Console.WriteLine("User picked " + userChoice);
+					printWinner(userChoice,computer(num), match+1, ref computerScore, ref PlayerScore);
+					match++;
+				}
+				Console.WriteLine("beginning round " + (round + 1) );
+				round++;
 			}
+			
+			
+			
+			
 			Console.Write("\n\n\n");
 			Console.WriteLine("Score : Computer - " + computerScore + "\t Player - " + PlayerScore);
 			Console.Write("\n\n\n");
