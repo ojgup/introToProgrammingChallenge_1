@@ -46,16 +46,16 @@ namespace psr
 			string userChoice; 
 			int computerScore = 0;
 			int PlayerScore = 0;
+			int i = 0;
 			
-			
-			for(int i = 0; i < 3; i++){
+			while(i < 3){
 		
 			Console.WriteLine("Enter in Paper, Scissors or Rock");
 			
 			userChoice = Console.ReadLine();
 			Console.WriteLine("User picked " + userChoice);
 			printWinner(userChoice,computer(num), i+1, ref computerScore, ref PlayerScore);
-			
+			i++;
 			}
 			Console.Write("\n\n\n");
 			Console.WriteLine("Score : Computer - " + computerScore + "\t Player - " + PlayerScore);
