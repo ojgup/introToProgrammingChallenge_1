@@ -1,0 +1,6 @@
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\bin\Debug\psr.exe.config
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\bin\Debug\psr.exe
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\bin\Debug\psr.pdb
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\obj\Debug\psr.csprojResolveAssemblyReference.cache
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\obj\Debug\psr.exe
+C:\Users\102542177\Documents\GitHub\introToProgrammingChallenge_1\psr\psr\obj\Debug\psr.pdb
